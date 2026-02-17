@@ -1,0 +1,175 @@
+<!DOCTYPE html> <html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Loïc Giltay - CV Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="top-header">
+      <h1>Loïc Giltay</h1>
+      <h3>Expert Technique Électricité & Gestionnaire de dossiers Digitaux</h3>
+      <p>Expertise Certificats Verts (Brugel) | Conformité Électrique | Analyse de Données Techniques</p>
+    </div>  
+    <div class="middle-header">
+      <img src="photo.jpg" alt="Photo de Loïc" class="avatar">
+      <div class="contact-box">
+        <p><i class="fa-solid fa-car fa-bounce"></i> Permis B + E, C1</p>
+        <p><i class="fa-solid fa-home"></i> / <i class="fa-solid fa-wifi fa-beat-fade"></i>  Disponible en 100% télétravail</p>
+        <a href="https://www.linkedin.com/in/lo%C3%AFc-giltay-1107ba332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-link"><i class="fab fa-linkedin"></i> Mon profil LinkedIn</a>
+      </div>
+      <div class="button-header">
+        <button class="btn btn-contact" onclick="openModal()"><i class="fa-solid fa-envelope"></i> Me contacter</button>
+      </div>
+    </div> 
+    
+  </header>
+  <hr>
+  <nav class="nav-container"> 
+    <button class="nav-item nav-homepage" onclick="ouvrirSection(event,'homepage')"><i class="fas fa-home"></i>ACCUEIL</button>
+    <button class="nav-item nav-profile" onclick="ouvrirSection(event,'profile')"><i class="fas fa-user-tie"></i>PROFIL</button>
+    <button class="nav-item nav-designs" onclick="ouvrirSection(event,'designs')"><i class="fas fa-laptop-code"></i>CONCEPTIONS</button>
+    <button class="nav-item nav-skills" onclick="ouvrirSection(event,'skills')"><i class="fas fa-bolt"></i>COMPÉTENCES</button>
+    <button class="nav-item nav-career" onclick="ouvrirSection(event,'career')"><i class="fas fa-briefcase"></i>PARCOURS</button>
+    <button class="nav-item nav-training" onclick="ouvrirSection(event,'training')"><i class="fas fa-shield-alt"></i>FORMATIONS</button> 
+    <button class="nav-item nav-viewAll" onclick="ouvrirSection(event,'viewAll')"><i class="fas fa-list-ul"></i>TOUT VOIR</button>
+  </nav>
+  <hr>
+  <main>
+    <section id="homepage" class="card-presentation"> 
+      <h2>Bienvenue dans mon univers</h2>
+      <p>Au-delà de l'expertise technique, je suis avant tout un <strong>mari et un papa comblé</strong> par un petit garçon né en 2021 et une petite fille qui nous a rejoint en 2025.
+        Ma famille est mon moteur et la raison pour laquelle je privilégie aujourd'hui un équilibre de vie en télétravail.
+      </p>
+      <p>
+        Passionné de <strong>modélisme</strong>, j'aime la précision qu'exige le montage de maquettes et l'ingéniosité des véhicules radiocommandés.
+        C'est cette même patience et ce goût du détail que je transpose dans mes dossiers professionnels.
+      </p>
+      <p>
+        Épicurien et sportif <strong>polyvalent</strong>, je m'évade dès que possible sur les pistes pour pratiquer le <strong>snowboard</strong>, mais aussi le <strong>roller</strong>, le <strong>vélo</strong> ou le <strong>wing-roller</strong>. 
+        Ce goût pour les sports variés reflète mon envie constante de relever des défis et mon besoin de liberté.
+      </p>
+      <div class="info-cv">
+       <p><i class="fa-solid fa-mouse-pointer"></i> <em>Cliquez sur les bulles pour découvrir comment j'applique cette rigueur et cette passion au service de projets pros.</em></p>
+       <p><i class="fa-solid fa-lock"></i> <strong>Note sur la confidentialité :</strong> Mon CV complet avec mes coordonnées directes est disponible sur simple demande via le bouton <strong>"Me contacter"</strong> ou sur <strong>LinkedIn</strong>.</p>
+  </div>
+    </section>
+    <hr>
+    <section id="profile" class="card-bubble">
+      <H2>EXPERTISE & NUMÉRIQUE</H2>
+      <p>
+        Expert technique rigoureux avec une solide <strong>expérience de 18 ans</strong> dans le secteur de l'énergie en Belgique.
+        Spécialiste de la <strong>conformité réglementaire (RGIE)</strong> et des procédures de <strong>certification (Brugel)</strong>, je maîtrise l'ensemble de la chaîne de validation des installations photovoltaïques.
+      </p>
+      <p>
+        Doté d'une forte affinité pour l'informatique et les outils de gestion numérique, je souhaite aujourd'hui mettre mon expertise technique et ma rigueur au profit de la gestion de projets à distance, où mon autonomie et ma maîtrise des outils collaboratifs seront des atouts majeurs.
+      </p>
+    </section>
+    <hr>
+    <section id="designs" class="card-bubble">
+      <h2>CONCEPTIONS & SOLUTIONS DIGITALES personnelles</h2>
+      <p><strong>AppSheet :</strong> Conception et déploiement d'une application de gestion pour le remboursement des bornes IRVE, incluant le calcul automatique basé sur les indices de la CREG.</p>
+      <p><strong>Automatisation :</strong> Développement de bots sur <strong>MetaTrader 5 (MQL5)</strong>, expertise sur <strong>Visual Studio Code</strong> et intégration de l'IA pour l'optimisation des flux de travail administratifs.</p>
+      <p><strong>CV Digital :</strong> Création de ce CV interactif en <strong>HTML/CSS/JS</strong>, intégrant des animations et une navigation fluide pour une expérience utilisateur optimale.</p>
+      <p><strong>Domotique & IoT :</strong> Conception et programmation d'un écosystème <strong>Niko Home Control</strong> synchronisé avec <strong>Sonos</strong> pour l'audio et <strong>Google Home</strong> pour la commande vocale, illustrant une maîtrise avancée des systèmes connectés et de l'automatisation résidentielle.</p>    
+    </section>  
+    <hr>
+    <section id="skills" class="card-bubble">
+      <h2>COMPÉTENCES CLÉS & LOGICIELS professionnels</h2>
+      <strong>Expertise métier :</strong> 
+      <ul> 
+        <li><strong>Réglementation :</strong> Maîtrise parfaite des normes RGIE et des critères de certification de l'énergie verte à Bruxelles.</li>
+        <li><strong>Audit & Contrôle :</strong> Analyse critique de dossiers techniques et validation de schémas unifilaires, réalisation d'audits techniques des membres de l'équipe.</li>
+        <li><strong>Gestion Administrative :</strong> Suivi complet d'équipe et de dossiers, de l'encodage à la délivrance des certificats officiels.</li>
+      </ul>
+        <strong>Compétences Digitales :</strong> 
+        <ul> 
+        <li><strong>Outils Métier :</strong> Maîtrise des plateformes de régulation (Extranet Brugel), iCL Filler (logiciels de rapportage), SketchUp, AutoCAD, Trikker et logiciels internes.</li>
+        <li><strong>Bureautique :</strong> Écosystème Microsoft (SharePoint, Power Automate, Liste, Forms, Teams et Suite Office), Google, Odoo.</li>
+        <li><strong>Affinité IT :</strong> Capacité d'adaptation rapide aux nouveaux logiciels (CRM, ERP) et outils de collaboration à distance (Teams, Zoom).</li>
+      </ul>
+    </section>
+    <hr>
+    <section id="career" class="card-bubble">
+      <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
+      <h3>Certinergie | Organisme de contrôle agréé (Depuis 2017)</h3>
+      <ul>
+        <li><strong>Expert Technique & Référent Dossiers Brugel (télétravail partiel) | 2024 - Présent :</strong>
+         <ul>
+           <li>Optimisation des procédures d'encodage et maintien de l'agrément.</li>
+           <li>Support technique complexe et gestion clients.</li>
+           <li>Sécurisation et renouvellement de l'agrément Brugel dans un contexte critique, assurant la continuité des activités régulées de l'entreprise.</li>
+           <li>Maintien d'une activité de terrain (Contrôles Domestique & BT).</li>
+         </ul>
+        </li>
+        <li><strong>Team Leader & Inspecteur Référent (télétravail partiel) | 2022-2024 :</strong>
+          <ul>
+            <li>Management de 8 agents (planning, qualité, supervisions, feedbacks, réunions).</li>
+            <li>Maintien d'une activité de terrain (Contrôles Domestique & BT).</li>
+          </ul>
+        </li>
+        <li><strong>Inspecteur & Préparateur technique PEB | 2017-2022 :</strong>
+           <ul>
+              <li>Contrôles RGIE et modélisations 3D (sketchUp) pour certificats PEB.</li>
+              <li>Formateur en interne.</li>
+           </ul>
+        </li>
+      </ul>
+      <h3>STEEL SA | Électricien Qualifié | 2011-2017 :</h3>
+        <ul>
+         <li>Installation et maintenance de systèmes de comptage pour sites industriels (ELIA, Sibelga).</li>
+         <li>Montage d'armoires de comptage pour sites stratégiques (ELIA).</li>
+         <li>Gestion logistique et des stocks via ERP.</li>
+        </ul> 
+      <h3>Autres expériences :</h3>
+        <ul>
+          <li>Expertises Multidisciplinaires (Intérims techniques) (2010-2011) : Missions qualifiées chez <strong>SPIE Belgium, ALLOSON, FILLIEUX</strong> et <strong> MD Technology</strong>.</li>
+          <li>Expérience Commerciale <strong>Luminus</strong> (2010) : Développement de l'aisance relationnelle et de la négociation client.</li>
+          <li><strong>GROUPE MONTFORT</strong> (2008-2010) : Électricien qualifié autonome sur chantiers.</li>
+          <li>Apprentissages & stages (2006-2008) : Acquisition des bases fondamentales en électricité et sécurité.</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="training" class="card-bubble">
+      <h2>Formations & Certifications</h2>
+      <p>
+        Certifié <strong>Conseiller en Prévention Niveau 3</strong> et <strong>VCA Cadre</strong> (2025), garantissant une gestion rigoureuse de la sécurité, des risques et du bien-être au travail.
+        Mon socle technique repose sur des formations de <strong>Gestion</strong> et <strong>Chef d'entreprise en installation électrique</strong> et complété par une accréditation <strong>BA5</strong>.
+      </p>
+      <p>Formations continues en conformité énergétique, réglementation RGIE et gestion de projets digitaux. Participation à des séminaires techniques.</p>
+      <p>Compétences linguistiques : Français (natif), Anglais (A1 en cours d'apprentissage), Néerlandais (A1).</p>
+      <p><strong>Apprentissage autodidacte :</strong> HTML, CSS, JavaScript, AppSheet, MQL5, Visual Studio Code, CapCut, DaVinci Resolve, Affinity, Canva, Niko Home Control programming et utilisation d'outils IA.</p>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <h4>Design & Code par Loïc GILTAY | © 2026 | Fernelmont, Belgique</h4>
+    <p>Propulsé par la curiosité et l'IA.</p>
+  </footer>
+  <dialog id="contactModal" class="modal">
+    <div id="modalHeader">
+        <h2>Contactez-moi</h2>
+        <p>Le message sera envoyé directement sur ma boîte mail.</p>
+    </div>
+    <form id="contactForm" action="https://formspree.io/f/xkovbvkw" method="POST" class="contact-form">
+        <label>Votre e-mail :</label>
+        <input type="email" name="email" placeholder="nom@exemple.com" required>
+        <label>Votre message :</label>
+        <textarea name="message" placeholder="Bonjour Loïc..." required></textarea>
+        <div class="modal-buttons">
+            <button type="submit" class="btn-send">Envoyer</button>
+            <button type="button" onclick="closeModal()" class="btn-close">Annuler</button>
+        </div>
+    </form>
+    <div id="successMessage" style="display: none; text-align: center; padding: 20px;">
+        <i class="fa-solid fa-circle-check" style="font-size: 3rem; color: #27ae60; margin-bottom: 15px;"></i>
+        <h2>Message envoyé !</h2>
+        <p>Merci, je vous répondrai dans les plus brefs délais.</p>
+        <button type="button" onclick="closeModal()" class="btn-close" style="margin-top: 20px;">Fermer</button>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>

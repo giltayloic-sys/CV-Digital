@@ -1,0 +1,281 @@
+/* couleur */
+:root {
+  /*body*/
+  --blanc: #ffffff;
+  
+  /*header*/
+  --bluedark-header: #002c5c;
+  --bluevibrant-header: #0056b3;
+  --orange-btn: #d68910;
+  --orange-btn-dark: color-mix(in srgb, var(--orange-btn), black 20%);
+  --green-btn: #1e8449;
+  --green-btn-dark: color-mix(in srgb, var(--green-btn), black 20%);
+
+  /*nav*/
+  --bluegreen-nav:#008b8b;
+  --slate-nav: #475569;
+  --blue-nav: #0070FF;
+  --green-nav: #27ae60;
+  --orange-nav: #f39c12;
+  --red-nav: #e74c3c;
+  --Gris-nav: #2c3e50;
+
+  /*main*/
+
+--text: #333;
+}
+
+/* page globale */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body hr {
+  display: none;
+}
+
+/* Le header */
+.main-header {
+    background: linear-gradient(135deg, var(--bluedark-header), var(--bluevibrant-header));
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin:20px auto; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-sizing: border-box;
+}
+
+.top-header {
+    text-align: left;}
+.top-header h1 {
+    font-size: 2rem;
+    margin: 0;}
+
+.top-header h3 {
+    color: #c1d7f9; 
+    font-weight: 400;}
+
+.top-header p {
+  color: #a0c4ff;}
+
+.middle-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;}
+
+.contact-box a, .contact-box p {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+
+.contact-link:hover {
+  color: var(--orange-nav)
+}
+
+.button-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+.btn:hover {
+    filter: saturate(1.5);
+    transform: scale(1.05);}
+.btn-contact { background-color: var(--orange-btn); box-shadow: 0 4px 0 var(--orange-btn-dark)}
+.btn-print { background-color: var(--green-btn); box-shadow: 0 4px 0 var(--green-btn-dark)}
+
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0; }
+.nav-container i { font-size: 1.8em; margin-bottom: 5px;}
+.nav-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.65em; font-weight: bold; text-transform: uppercase;
+    transition: transform 0.2s ease;}
+.nav-homepage { background-color:var(--bluegreen-nav); }
+.nav-profile { background-color: var(--slate-nav); }
+.nav-designs { background-color: var(--blue-nav); }
+.nav-skills { background-color: var(--green-nav); }
+.nav-career { background-color: var(--orange-nav);}
+.nav-training { background-color: var(--red-nav);}
+.nav-viewAll { background-color: var(--Gris-nav);}
+.nav-item:hover {transform: scale(1.1) rotate(5deg);}
+.nav-item.active {
+    outline: 3px solid white;
+    outline-offset: -4px;
+    filter: brightness(1.1);}
+
+/*contenu principal*/
+main {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+section {
+    background-color: var(--blanc); 
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    line-height: 1.6;
+    color:var(--text);
+    box-sizing: border-box;
+}
+.card-presentation {  border-left: 5px solid var(--bluevibrant-header);}
+.info-cv {
+    background-color: rgba(0, 86, 179, 0.05); /* Un bleu très léger */
+    border-right: 3px solid var(--bluevibrant-header);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 0 10px 10px 0;
+    font-size: 0.9rem;
+}
+
+.info-cv i {
+    color: var(--bluevibrant-header);
+    margin-right: 5px;
+}
+.card-bubble {  border-top: 5px solid var(--bluevibrant-header);}
+
+section h2 {color: var(--bluevibrant-header);margin-top: 0;}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    border-top: 1px solid #e2e8f0;}
+
+/* dialogue */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none; 
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-send {
+    flex: 1;
+    background-color: var(--bluevibrant-header);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .middle-header {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .button-header {
+      flex-direction: row;
+    }
+
+    .top-header {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #14151a;
+  }
+  .nav-item {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  section {
+        background-color: #1e1e1e; 
+        color: #c5c5c5; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  }
+
+/*pour le dialogue*/
+.modal {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 1px solid #333;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        background-color: #2d2d2d;
+        border: 1px solid #444;
+        color: #ffffff;
+    }
+
+    .contact-form input::placeholder, 
+    .contact-form textarea::placeholder {
+        color: #888;
+    }
+    
+    .contact-form label {
+        color: #a0c4ff;
+    }
+  }
